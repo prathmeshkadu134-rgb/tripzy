@@ -1,0 +1,281 @@
+
+.nav-package {
+    width: 100%;
+}
+
+.heading {
+    background-image: url("src/assets/varanasi.png");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(10, 25, 42, 0.8) 0%, rgba(10, 25, 42, 0.3) 100%); 
+    z-index: 1;
+}
+
+.heading h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+/* Typewriter Effect Styling (Gold Accent) */
+.typewriter {
+    font-size: 2.8rem;
+    color: rgb(255, 195, 0); /* Gold Accent */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgb(255, 195, 0);
+    width: 0;
+    margin-bottom: -20px;
+    font-family: "Yesteryear", cursive;
+    animation: typing 6s steps(16) infinite, blink 0.5s step-end infinite;
+    display: inline-block;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 23ch }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: rgb(255, 195, 0); }
+}
+
+.nav-package-content {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.nav-package-content p {
+    color: rgb(51, 51, 51);
+    width: 90%; 
+    max-width: 900px;
+    margin: 15px auto; 
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: justify; 
+}
+
+.nav-package-content p b {
+    font-weight: 600;
+    color: rgb(10, 25, 42); 
+}
+
+.india-tours {
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package-grid-heading {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(10, 25, 42); 
+    margin: 40px 0 30px 0; 
+}
+
+.india-tours .typewriter {
+    font-size: 2.4rem;
+    animation: typing-short 6s steps(22) infinite, blink 0.5s step-end infinite;
+}
+
+@keyframes typing-short {
+    from { width: 0 }
+    to { width: 24ch }
+}
+
+.tour-sec1 {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.tour-card {
+    flex: 1 1 30%; 
+    max-width: calc(30% - 20px); 
+}
+.tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(10, 25, 42, 0.2);
+    cursor: pointer;
+}
+
+.tour-img-wrapper {
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    
+    transition: filter 0.3s ease;
+}
+
+.tour-card:hover .tour-img-wrapper {
+    /* Kept the brightness change, but removed the transform from here 
+       as it's applied to the parent card for the lift effect */
+    filter: brightness(0.7);
+}
+
+.tour-img-wrapper p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    z-index: 2;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+/* Overlay for text readability on image */
+.tour-img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.tour-desc {
+    width: 300px;
+    margin: 15px 15px 20px 15px;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    color: #555;
+    /* text-align: center; */
+}
+
+/* Individual Image Backgrounds (Kept from original code) */
+.tour1-img { background-image: url("src/assets/delhi.png"); }
+.tour2-img { background-image: url("src/assets/keralatour.png"); }
+.tour3-img { background-image: url("src/assets/rajastantour.png"); }
+.tour4-img { background-image: url("src/assets/ayodhyatour.png"); }
+.tour5-img { background-image: url("src/assets/darjeelingtour.png"); }
+.tour6-img { background-image: url("src/assets/amritsartour.png"); }
+.tour7-img { background-image: url("src/assets/andamantour.png"); }
+.tour8-img { background-image: url("src/assets/himachaltour.png"); }
+.tour9-img { background-image: url("src/assets/assamtour.png"); }
+.tour10-img { background-image: url("src/assets/karnatakatour.png"); }
+.tour11-img { background-image: url("src/assets/ladkahtour.png"); }
+.tour12-img { background-image: url("src/assets/goatour.png"); }
+.tour13-img { background-image: url("src/assets/chardhamtour.png"); }
+.tour14-img { background-image: url("src/assets/srinagartour.png"); }
+.tour15-img { background-image: url("src/assets/utharakhandtour.png"); }
+
+
+/* --- Responsive Design --- */
+
+/* Tablet View (max-width: 992px) */
+@media (max-width: 992px) {
+    .heading {
+        height: 35vh;
+    }
+
+    .heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .typewriter {
+        font-size: 2rem;
+    }
+
+    .tour-sec1 {
+        /* Switch to 2 columns */
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .tour-card {
+        flex: 1 1 calc(50% - 10px); /* Two cards per row with gap */
+        max-width: calc(50% - 10px);
+    }
+    
+    .tour-img-wrapper {
+        height: 180px;
+    }
+
+    .tour-img-wrapper p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile View (max-width: 650px) */
+@media (max-width: 650px) {
+    .heading {
+        height: 30vh;
+        padding: 20px;
+    }
+
+    .heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .typewriter {
+        font-size: 1.8rem;
+    }
+
+    .nav-package-content p {
+        font-size: 0.9rem;
+        text-align: left; /* Align left for easier reading on narrow screens */
+    }
+
+    .package-grid-heading {
+        font-size: 1.5rem;
+    }
+
+    .india-tours .typewriter {
+        font-size: 1.8rem;
+    }
+
+    .tour-sec1 {
+        /* Switch to 1 column */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .tour-card {
+        flex: 1 1 100%; 
+        max-width: 95%; /* Use almost full width */
+    }
+    
+    .tour-img-wrapper {
+        height: 150px;
+    }
+    
+    .tour-desc {
+        font-size: 0.85rem;
+    }
+}

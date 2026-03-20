@@ -1,0 +1,132 @@
+/* General Layout */
+.about-page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Hero Section with Pexels Image */
+.about-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url("https://images.pexels.com/photos/1007427/pexels-photo-1007427.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Intro Section */
+.about-intro {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.brand-title {
+    font-size: 45px;
+    letter-spacing: 10px;
+    color: rgb(30, 30, 30);
+    margin: 0;
+}
+
+.brand-subtitle {
+    color: rgb(197, 160, 89); /* Gold RGB */
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.description-text {
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.8;
+    color: rgb(80, 80, 80);
+    font-size: 18px;
+}
+
+/* Value Cards Section */
+.values-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.value-card {
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.value-card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Stats Bar */
+.stats-bar {
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 40px;
+    color: rgb(197, 160, 89);
+    margin: 0;
+}
+
+/* CTA Section with Pexels Image */
+.about-cta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                      url("https://images.pexels.com/photos/2104882/pexels-photo-2104882.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.cta-btn {
+    padding: 15px 35px;
+    background-color: rgb(197, 160, 89);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: rgb(160, 130, 70);
+    transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-text { font-size: 35px; }
+    .stats-bar { flex-direction: column; gap: 30px; }
+    .values-section { flex-direction: column; align-items: center; }
+}

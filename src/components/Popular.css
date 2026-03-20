@@ -1,0 +1,313 @@
+.popular{
+    width: 80%;
+    margin-left: 220px;
+    margin-top: 300px;
+    display: flex;
+}
+
+.popular-container .img-section .img1{
+  display: flex;
+  justify-content: center;
+}
+.popular-container .img-section .img2{
+  display: flex;
+  margin-top: 40px;
+}
+
+.maha{
+   background-image: url("src/assets/maharastra.png");
+    background-size: cover;
+    height: 50vh;
+    width: 200px;
+    margin-right: 20px;
+    margin-left: -60px;
+    font-size: 45px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: white; 
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .megh{
+    background-image: url("src/assets/meghalaya.png");
+    background-size: cover;
+    height: 50vh;
+    width: 200px;
+    font-size: 45px;
+    margin-right: 20px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: white; 
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .kera{
+  background-image: url("src/assets/kerala.png");
+    background-size: cover;
+    height: 50vh;
+    width: 200px;
+    font-size: 45px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: white; 
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .guj{
+   background-image: url("src/assets/gujarat.png");
+    background-size: cover;
+    height: 50vh;
+    width: 200px;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+    color: white; 
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .kash{
+   background-image: url("src/assets/kashmir.png");
+    background-size: cover;
+    height: 50vh;
+    width: 200px;
+    font-size: 45px;
+    margin-right: 20px;
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: white; 
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .ass{
+   background-image: url("src/assets/assam.png");
+    background-size: cover;
+    height: 50vh;
+    width: 200px;
+    font-size: 45px;
+    margin-right: 20px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: white; 
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .raja{
+   background-image: url("src/assets/rajastan.png");
+    background-size: cover;
+    height: 50vh;
+    width: 200px;
+    font-size: 45px;
+    margin-right: 20px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: white; 
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .pun{
+   background-image: url("src/assets/punjab.png");
+    background-size: cover;
+    height: 50vh;
+    width: 200px;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: white; 
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.img-section .effect:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(10, 25, 42, 0.4);
+}
+.img-section .effect::before{
+     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(10, 25, 42, 0.75) 0%, rgba(10, 25, 42, 0) 50%); 
+    z-index: 1;
+   
+}
+.pop{
+
+    color: rgb(46, 46, 46);
+}
+
+ .popular-typewriter {
+      font-size: 35px;
+      color: rgb(255, 195, 0);
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid rgb(255, 195, 0);
+      width: 0;
+      margin-bottom: -100px;
+      font-family: "Yesteryear", cursive;
+      animation: popular-typing 3s  steps(16) infinite , blink 0.75s step-end infinite;
+    
+    }
+
+    @keyframes popular-typing {
+      from { width: 0 }
+      to { width: 9ch }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #333; }
+    }
+
+
+.main-text {
+  margin-top: -150px; 
+  position: absolute;
+    
+}
+
+
+
+.img-section {
+  margin-top: -70px; 
+  padding-top: 0;
+ 
+}
+.popular-container {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .popular {
+        width: 95%;
+        margin: 100px auto; 
+    }
+
+    .main-text {
+        position: relative;
+        margin-top: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .maha, .megh, .kera, .guj, .kash, .ass, .raja, .pun {
+        width: 180px; 
+        height: 40vh;
+        font-size: 32px;
+        margin-left: 0; 
+    }
+}
+
+@media (max-width: 768px) {
+    .popular {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 15px;
+        display: block;
+    }
+
+    .main-text {
+        margin-bottom: 30px;
+    }
+
+    .pop {
+        font-size: 28px;
+    }
+
+    .popular-typewriter {
+        font-size: 24px;
+        display: block; 
+        margin: 10px auto;
+    }
+
+    .popular-container .img-section .img1,
+    .popular-container .img-section .img2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .maha, .megh, .kera, .guj, .kash, .ass, .raja, .pun {
+        width: 100%; 
+        height: 30vh;
+        font-size: 24px;
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .pop {
+        font-size: 22px;
+    }
+
+    .popular-typewriter {
+        font-size: 20px;
+    }
+
+    .popular-container .img-section .img1,
+    .popular-container .img-section .img2 {
+        grid-template-columns: 1fr;
+    }
+
+    .maha, .megh, .kera, .guj, .kash, .ass, .raja, .pun {
+        height: 25vh;
+        font-size: 22px;
+    }
+
+    .maha, .kash {
+        margin-left: 0;
+    }
+}

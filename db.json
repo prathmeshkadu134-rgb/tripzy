@@ -1,0 +1,66 @@
+{
+  "bookings": [
+    {
+      "id": "4066",
+      "from": "Mumbai",
+      "to": "Dubai",
+      "departure": "2026-02-15",
+      "returnDate": "2026-02-25",
+      "adults": "2",
+      "travelClass": "Business",
+      "accommodation": "Boutique Resort"
+    },
+    {
+      "id": "0bc1",
+      "from": "Mumbai",
+      "to": "New York",
+      "departure": "2026-03-20",
+      "returnDate": "2026-03-28",
+      "adults": "5",
+      "travelClass": "First Class",
+      "accommodation": "Boutique Resort"
+    }
+  ],
+  "enquiries": [
+    {
+      "id": "089d"
+    },
+    {
+      "id": "89a9",
+      "name": "prathmesh",
+      "contact": "9309855771",
+      "email": "psk@gmail.com",
+      "details": "want to know about bankok tour",
+      "foundBy": "Friend"
+    },
+    {
+      "id": "e0bb",
+      "name": "niraj",
+      "contact": "9656874569",
+      "email": "ni@gmail.com",
+      "details": "want to khow about dubai tour",
+      "foundBy": "Advertisement"
+    }
+  ],
+  "contacts": [
+    {},
+    {
+      "id": "8e63",
+      "name": "prathmesh",
+      "number": "8653265895",
+      "email": "pra@gmail.com",
+      "message": "hello"
+    }
+  ],
+  "hotels": [
+    {},
+    {
+      "id": "b1d0",
+      "fullName": "raj",
+      "email": "Raj@gmail.com",
+      "checkIn": "2026-03-20",
+      "checkOut": "2026-03-24",
+      "roomType": "heritage"
+    }
+  ]
+}

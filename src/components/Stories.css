@@ -1,0 +1,167 @@
+/* --- Stories Section --- */
+.story {
+    padding: 60px 0;
+}
+
+.story-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.story-heading .head-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(10, 25, 42); /* Navy Blue Heading */
+    margin: 0;
+}
+
+/* --- Stories Grid Layout --- */
+.story-image-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.story-card {
+    flex: 1; /* Equal width for all cards */
+    max-width: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(10, 25, 42, 0.2);
+    cursor: pointer;
+}
+
+/* --- Image Wrapper --- */
+.story-img-wrapper {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+}
+
+/* Image Overlay for text readability */
+.story-img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(10, 25, 42, 0.6) 0%, rgba(10, 25, 42, 0) 60%);
+    z-index: 1;
+}
+
+.main-heading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(240, 240, 240); /* Light text over image */
+    z-index: 2;
+    margin: 0;
+    text-align: center;
+}
+
+/* --- Individual Image Backgrounds --- */
+.story-img1 { background-image: url("src/assets/durgapuja.png"); }
+.story-img2 { background-image: url("src/assets/ganpati.png"); }
+.story-img3 { background-image: url("src/assets/camel.png"); }
+
+
+/* --- Content Below Image --- */
+.story-img-content {
+    padding: 20px 20px 30px 20px;
+    text-align: left;
+}
+
+.story-img-content .dates {
+    color: rgb(114, 114, 114);
+    font-size: 0.9rem;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style the icons (FaRegCalendarAlt, FaComments) */
+.story-img-content .dates svg {
+    color: rgb(255, 195, 0); /* Gold Icons */
+    margin-right: 5px;
+}
+
+.story-img-content h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(10, 25, 42); /* Navy Blue Heading */
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* --- Responsive Design --- */
+
+/* Tablet View (max-width: 992px) */
+@media (max-width: 992px) {
+    .story-image-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .story-card {
+        flex: 1 1 calc(50% - 10px); /* 2 cards per row */
+        max-width: 45%;
+    }
+
+    .story-heading .head-text {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile View (max-width: 650px) */
+@media (max-width: 650px) {
+    .story-image-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .story-card {
+        flex: 1 1 100%; /* 1 card per row */
+        max-width: 350px;
+    }
+
+    .story-img-wrapper {
+        height: 180px;
+    }
+
+    .story-heading .head-text {
+        font-size: 1.8rem;
+    }
+    
+    .story-img-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .story-img-content .dates {
+        font-size: 0.85rem;
+    }
+}

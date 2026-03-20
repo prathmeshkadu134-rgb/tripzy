@@ -1,0 +1,154 @@
+.legacy {
+    padding: 60px 0;
+}
+
+.legacy-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 246, 230); 
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+.le-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.le-normal {
+    font-size: 2.5rem;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cust {
+    font-size: 2.5rem;
+    color: rgb(255, 195, 0); 
+    font-weight: 700;
+}
+
+.le-content h5 {
+    color: rgb(10, 25, 42); 
+    margin-top: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 600px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    min-height: 250px; 
+    flex: 1;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(10, 25, 42, 0.1); 
+    background-color: rgb(240, 240, 240); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(10, 25, 42, 0.2);
+}
+
+.card-rating {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: rgb(255, 195, 0); 
+}
+
+.star {
+    margin: 0 2px;
+    color: rgb(255, 225, 0);
+}
+
+.review-text {
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card-names {
+    color: rgb(10, 25, 42); 
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+@media (max-width: 992px) {
+    .cards {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .testimonial-card {
+        flex: 1 1 calc(50% - 10px); 
+        max-width: 45%;
+        min-height: 220px;
+    }
+
+    .le-normal, .cust {
+        font-size: 2rem;
+    }
+
+    .le-content h5 {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .legacy-container {
+        padding: 30px 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .testimonial-card {
+        flex: 1 1 90%;
+        width: 100%;
+        max-width: 350px;
+        min-height: 180px;
+        padding: 20px 15px;
+    }
+
+    .le-normal, .cust {
+        font-size: 1.8rem;
+    }
+    
+    .card-rating {
+        font-size: 1.3rem;
+    }
+    
+    .review-text {
+        font-size: 0.9rem;
+    }
+    
+    .card-names {
+        font-size: 1.1rem;
+    }
+}

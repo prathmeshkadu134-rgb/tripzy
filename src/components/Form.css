@@ -1,0 +1,234 @@
+/* --- Footer Section --- */
+.footer {
+    background-color: rgb(10, 25, 42); /* Navy Blue background */
+    color: rgb(240, 240, 240); /* Light text color */
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+/* Base style for headings and paragraphs in the footer */
+.footer-container h3 {
+    color: rgb(255, 195, 0); /* Gold Heading */
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-container p {
+    color: rgb(200, 200, 200);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+}
+
+/* --- Left Section --- */
+.footer-left {
+    max-width: 350px;
+}
+
+.foot-img img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.company-desc {
+    margin-bottom: 20px;
+}
+
+/* Social Icons (New Element) */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: rgb(240, 240, 240);
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(255, 195, 0); /* Gold hover effect */
+}
+
+/* --- Middle Section: Links --- */
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-middle a {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    padding: 5px 0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-middle a:hover {
+    color: rgb(255, 195, 0); /* Gold hover effect */
+}
+
+.query-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 195, 0); /* Gold Button */
+    color: rgb(10, 25, 42); /* Navy text */
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Aligns button to the left */
+}
+
+.query-btn:hover {
+    background-color: rgb(255, 212, 79);
+}
+
+/* --- Right Section: Contact --- */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-cont-detail p {
+    margin: 0;
+}
+
+.foot-add {
+    margin-top: 5px !important;
+}
+
+.whatsapp {
+    margin-top: 30px;
+}
+
+.whatsapp-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -10px;
+}
+
+.whatsapp-icon {
+    font-size: 1.5rem;
+    color: rgb(255, 195, 0); /* Gold icon */
+}
+
+.foot-num {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* --- Copyright Bar --- */
+.copyright {
+    text-align: center;
+    padding: 15px 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgb(150, 150, 150);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* --- Responsive Design --- */
+
+/* Tablet View (max-width: 786px) */
+@media (max-width: 786px) {
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: left;
+        gap: 40px 20px;
+        width: 100%;
+        padding: 0 20px 40px 20px;
+    }
+
+    .footer-left {
+        width: 100%; /* Full width for logo and description */
+        max-width: 100%;
+        text-align: center;
+        margin-top: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 20px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-middle,
+    .footer-right {
+        width: 45%; /* Two columns */
+        margin-top: 0;
+    }
+    
+    .footer-middle {
+        align-items: flex-start;
+    }
+
+    .query-btn {
+        align-self: flex-start;
+        width: auto;
+    }
+    
+    .whatsapp-info {
+        justify-content: flex-start;
+    }
+}
+
+/* Mobile View (max-width: 550px) */
+@media (max-width: 550px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer-left {
+        padding-bottom: 15px;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        width: 100%;
+        text-align: left;
+        margin-top: 0;
+    }
+    
+    .footer-left {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .foot-img {
+        text-align: left;
+    }
+    
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    .footer-middle {
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
